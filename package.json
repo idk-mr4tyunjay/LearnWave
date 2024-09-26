@@ -1,0 +1,18 @@
+{
+  "name": "leetcode-gist",
+  "version": "1.0.0",
+  "description": "gist containing leetcode info",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "idk-mr4tyunjay",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^21.0.2",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5"
+  }
+}

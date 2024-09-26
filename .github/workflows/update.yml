@@ -1,0 +1,21 @@
+name: Update LeetCode Gist
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  push:
+    branches:
+      - main
+  workflow_dispatch: 
+  
+jobs:
+  update-leetcode-gist:
+   runs-on: ubuntu-latest
+   steps:
+     - uses: actions/checkout@v2
+     - run: npm install
+     - name: Update LeetCode Stats
+       uses: ./
+       env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIST_ID: ${{ secrets.GIST_ID }}
+          LEETCODE_USERNAME: ${{ secrets.LEETCODE_USERNAME }}

@@ -1,1 +1,1 @@
-# LearnWave
+# Leetcode Gist

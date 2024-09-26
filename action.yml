@@ -1,0 +1,9 @@
+name: "leetcode-gist"
+author: Mruthunjay
+description: "Update a pinned gist to show LeetCode stats"
+branding:
+  icon: code
+  color: blue
+runs:
+  using: "node12"
+  main: "./index.js"
